@@ -1,0 +1,101 @@
+html{scroll-behaviour: smooth;  }
+*{padding:0; margin:0 box-sizing: border-box;}
+body{background: #0a3d62; font-family: 'Poppins', sans-serif;}
+
+header{
+  width:100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    background: #3c6382;s
+
+}
+header img{
+  width:10rem;
+  height: auto;
+  border-radius: 50%;
+}
+.container{
+     width: 100%;
+     min-height: 150vh;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 0.8fr 0.2fr;
+     gap: 1rem;
+     grid-template-areas: "about about Skills Skills"
+                          "projects projects projects projects"
+                          "Resume Resume Contact Contact"
+                          "footer footer footer footer";
+                          padding: 2rem;
+}
+  .about{
+    background: white;
+    color:black;
+    padding: 2rem;
+    grid-area: about;
+  }
+  .Skills{
+    background: #3c6382;
+    color:white;
+    padding: 2rem;
+    grid-area: Skills;
+  }
+  .projects{
+    background: #3c6382;
+    color:white;
+    padding: 2rem;
+    grid-area: projects;
+  }
+  .Resume{
+    background: #3c6382;
+    color:white;
+    padding: 2rem;
+    grid-area: Resume;
+  }
+  .Contact{
+    background:#3c6382;
+    color:white;
+    padding: 2rem;
+    grid-area: Contact;
+  }
+  footer{
+    background: white;
+    color: #3c6382;
+    padding: 2rem;
+    grid-area: footer;
+  }
+
+  .about p{
+    padding: 0.3rem 0.5rem;
+    text-align: justify;
+    line-height: 2.2rem;
+  }
+
+  .Resume a{
+    text-decoration: none;
+       padding: 0.5rem 0.7rem;
+       background: white;
+       color:black;
+  }
+  .Skills ul{
+    margin:1rem 0;
+    padding: 0.3rem 1rem;
+
+  }
+  .Skills ul li{
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .Contact div i{
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  footer{
+    text-align: center;
+  }
+   img{
+    width: 300px;;
+    height: auto;
+  }
